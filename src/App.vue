@@ -3,8 +3,19 @@
 import {store} from './store/store.js';
 import axios from 'axios';
 
+import Header from './components/Header.vue';
+
 export default {
     name: 'App',
+    components: {
+        Header
+    },
+
+    data(){
+            return{
+                posts:[]
+            }
+        },
 
     methods:{
         getApi(){
@@ -23,23 +34,10 @@ export default {
 </script>
 
 <template>
-
-    <div class="container">
-      
-        <h1>Elenco dei post</h1>
-
-        <ul>
-            <li
-            v-for="post in posts"
-            :key="post.id"
-            >
-            <span>{{ post.title }}</span> <span>{{ post.date }}</span>
-            </li>
-        </ul>
-    </div>
-    
+    <Header/>
+    <router-view></router-view>    
 </template>
 
 <style lang="scss" scoped>
-  @use '../src/store/scss/style.scss';
+    @use '../src/store/scss/style.scss';
 </style>
