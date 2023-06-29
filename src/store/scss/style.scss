@@ -1,1 +1,27 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
+body{
+  background-color: brown;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.container-inner{
+  background-color: white;
+  min-height: 400px;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+  margin: 20px 0px;
+}

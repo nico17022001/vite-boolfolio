@@ -34,10 +34,12 @@ export default {
 </script>
 
 <template>
-    <Header/>
-    <router-view></router-view>    
+    <div class="container">
+        <Header/>
+        <router-view></router-view>    
+    </div>
 </template>
 
-<style lang="scss" scoped>
-    @use '../src/store/scss/style.scss';
+<style lang="scss">
+    @use './store/scss/style.scss';
 </style>

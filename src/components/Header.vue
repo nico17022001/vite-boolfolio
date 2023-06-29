@@ -25,8 +25,10 @@
         font-size: large;
         a{
           text-decoration: none;
-          color: black;
-        }
+          color: white;
+        }:hover{
+            color: yellow;
+          }
       }
     }
     .active{
